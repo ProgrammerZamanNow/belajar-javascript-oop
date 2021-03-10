@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class : Super Method</title>
+</head>
+<body>
+<script>
+
+    class Shape {
+        paint(){
+            console.info("Paint Shape");
+        }
+    }
+
+    class Circle extends Shape{
+        paint(){
+            super.paint();
+            console.info("Paint Circle");
+        }
+    }
+
+    const circle = new Circle();
+    circle.paint();
+
+</script>
+</body>
+</html>

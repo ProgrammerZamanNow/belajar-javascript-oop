@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Field</title>
+</head>
+<body>
+<script>
+
+    class Configuration {
+        static name = "Belajar JavaScript OOP";
+        static version = 1.0;
+        static author = "Eko Kurniawan"
+    }
+
+    const config = new Configuration();
+    console.info(config);
+
+    Configuration.author = "Eko Khannedy";
+
+    console.info(Configuration.name);
+    console.info(Configuration.version);
+    console.info(Configuration.author);
+
+</script>
+</body>
+</html>
